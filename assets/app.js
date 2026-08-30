@@ -33,6 +33,17 @@ const PROFILES = {
     links: [
       { label: 'LinkedIn', url: 'https://www.linkedin.com/in/menna-tallah-sayed-nady/' }
     ]
+  },
+  'media': {
+    name: 'I-Mole Lab',
+    role: 'Official Website & Social Media',
+    phone: '',
+    email: '',
+    links: [
+      { label: 'Website', url: 'https://i-mole.com' },
+      { label: 'Facebook', url: 'https://www.facebook.com/iMoleLab' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/company/i-mole-lab' }
+    ]
   }
 };
 
