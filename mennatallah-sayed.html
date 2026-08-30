@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menna Tallah Sayed — I-Mole Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo-badge">
+      <img src="logo.png" alt="I-Mole Lab Logo" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span class=fallback>I-MOLE</span>'">
+    </div>
+    <p class="tag">Molecular &amp; Diagnostics Research</p>
+    <h1>I-Mole Lab</h1>
+  </header>
+
+  <div class="profile-card">
+    <div class="profile-avatar" id="profileAvatar"></div>
+    <h2 id="profileName"></h2>
+    <p class="role" id="profileRole"></p>
+    <ul class="contact-list" id="contactList"></ul>
+
+    <div class="profile-qr" id="profileQr"></div>
+    <p class="qr-caption">Scan this code to open this page directly</p>
+
+    <div class="actions">
+      <button class="btn primary" id="saveContactBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Save contact
+      </button>
+      <button class="btn" id="downloadQrBtn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+        Download QR
+      </button>
+    </div>
+
+    <a class="back-link" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to team directory
+    </a>
+  </div>
+
+  <footer>I-MOLE LAB &middot; SCAN → OPEN PROFILE → SAVE CONTACT</footer>
+</div>
+
+<script src="assets/app.js"></script>
+<script>renderProfile('mennatallah-sayed');</script>
+</body>
+</html>

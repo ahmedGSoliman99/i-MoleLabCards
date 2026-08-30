@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I-Mole Lab — Team Directory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo-badge">
+      <img src="logo.png" alt="I-Mole Lab Logo" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span class=fallback>I-MOLE</span>'">
+    </div>
+    <p class="tag">Molecular &amp; Diagnostics Research</p>
+    <h1>I-Mole Lab</h1>
+    <p class="sub">Team directory — tap a profile or scan its QR code to open that person's own page directly.</p>
+  </header>
+
+  <svg class="helix-divider" viewBox="0 0 1120 34" preserveAspectRatio="none">
+    <path d="M0 4 Q140 30 280 4 T560 4 T840 4 T1120 4" stroke="url(#g1)" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M0 30 Q140 4 280 30 T560 30 T840 30 T1120 30" stroke="url(#g1)" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2fb6e0"/><stop offset="1" stop-color="#1565c0"/>
+    </linearGradient></defs>
+  </svg>
+
+  <main class="grid" id="directoryGrid"></main>
+
+  <footer>I-MOLE LAB &middot; SCAN → OPEN PROFILE → SAVE CONTACT</footer>
+</div>
+
+<script src="assets/app.js"></script>
+<script>renderDirectory();</script>
+</body>
+</html>
